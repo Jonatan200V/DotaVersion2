@@ -1,0 +1,39 @@
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ff812d;
+}
+.close {
+  display: none;
+}
+
+.change {
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      rgba(80, 79, 87, 0) 23%,
+      rgba(80, 79, 87, 0) 25%,
+      rgba(11, 11, 11, 1) 100%
+    );
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: #00000090;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+}

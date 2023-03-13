@@ -1,0 +1,13 @@
+[data-iswidth='true'] {
+  height: 5em;
+  font-size: clamp(14.5px, 0.9vw + 0.5em, 18px);
+  width: 18em;
+  text-align: left;
+  @include responsive() {
+    display: flex;
+    gap: 0.8em;
+  }
+}
+[data-p='true'] {
+  font-weight: bold;
+}

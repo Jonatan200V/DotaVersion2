@@ -1,0 +1,66 @@
+.home {
+  height: 750px;
+  margin-bottom: -90px;
+  position: relative;
+  width: 100%;
+
+  &__div {
+    animation-name: Init;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    height: 100%;
+    width: 50%;
+    @include flex(column, nowrap, center, flex-start, 1em);
+    margin: 0 0 0 8em;
+    position: relative;
+    font-family: Reaver;
+    @include responsive(850px) {
+      margin: 0 0 0 1em;
+      width: 80%;
+    }
+  }
+  &__p {
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: clamp(2em, 2.8vw + 0.5em, 3.8em);
+  }
+  &__des {
+    font-family: Radiance;
+    font-size: 1.4em;
+    opacity: 0.5;
+  }
+  &__background {
+    width: 5em;
+    height: 2px;
+    background: $color-underline;
+  }
+  &__video {
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  &__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #504f5700 72%, #0b0b0b 100%);
+  }
+  &__source {
+  }
+  &__descargar {
+    font-size: 0.8em;
+    font-family: Radiance;
+    opacity: 0.5;
+  }
+}
+@keyframes Init {
+  from {
+    transform: translateX(-15em);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

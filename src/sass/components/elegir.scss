@@ -1,0 +1,17 @@
+.elegir {
+  height: 1000px;
+  position: relative;
+  &__background {
+    @include backgroundImageDark();
+    height: 100%;
+    background-image: url('https://res.cloudinary.com/di0jcyqyv/image/upload/v1678667208/dota/home/pholza1zpl87z3qmmbed.jpg');
+  }
+  &__background--top {
+    position: absolute;
+    box-shadow: 15px 86px 127px 88px rgba(0, 0, 0, 1) inset;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+}

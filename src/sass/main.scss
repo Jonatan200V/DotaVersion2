@@ -1,0 +1,10 @@
+@import './variables/variables.scss', './reset/reset.scss',
+  './mixins/mixin.scss', './fonts/fonts.scss', './generic/generic.scss',
+  './components/header.scss', './components/home.scss',
+  './components/noticias.scss', './components/unete.scss',
+  './components/elegir.scss', './components/dpc.scss',
+  './components/carruzel.scss', './components/end.scss',
+  './components/footer.scss', './data/data.scss';
+.main {
+  overflow: hidden;
+}

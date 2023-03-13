@@ -1,0 +1,61 @@
+.unete {
+  height: 1000px;
+  position: relative;
+  &__background {
+    background-image: url('https://res.cloudinary.com/di0jcyqyv/image/upload/v1678658302/dota/home/vtjl0xfqplvsixvurly4.jpg');
+    @include backgroundImageDark();
+  }
+  &__text {
+    position: relative;
+    height: 100%;
+    z-index: 20;
+    @include flex(column, nowrap, flex-end, center, 1.5em) // z-index: 5;
+;
+  }
+  &__h2 {
+    font-family: Reaver;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    @include flex(column, nowrap, center, center, 0);
+    letter-spacing: 5px;
+  }
+  &__span {
+    font-size: clamp(2em, 2.51vw + 1.2em, 6.5em);
+    opacity: 0.5;
+  }
+  &__p {
+    font-size: clamp(2.5em, 2.51vw + 1.2em, 7em);
+  }
+  &__orange {
+    width: 8em;
+    height: 0.2em;
+    background: $color-underline;
+  }
+  &__div {
+    @include flex(row, nowrap, center, center, 0);
+  }
+  &__paragraph {
+    font-family: Radiance;
+    opacity: 0.7;
+    font-size: clamp(1.3em, 1.51vw + 0.8em, 1.8em);
+    max-width: 38em;
+    text-align: center;
+  }
+  &__novedades {
+    font-size: 1.4em;
+    font-family: Radiance;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    border: 2px solid $color-header;
+    border-radius: 0.2em;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-0.5em);
+      border-color: $color-underline;
+    }
+    &--span {
+    }
+  }
+}

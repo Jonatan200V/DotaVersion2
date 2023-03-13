@@ -1,0 +1,52 @@
+.carruzel {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  margin: 6em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 80%;
+  &__div {
+    @include flex(row, nowrap, flex-start, flex-start, 1em);
+    animation-name: carruzelHomePage;
+    animation-duration: 75s;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    width: 100em;
+  }
+  &__div--2 {
+    @include flex(row, nowrap, flex-end, flex-end, 1em);
+    animation-name: carruzelHomePageRigth;
+    animation-duration: 75s;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    width: 100em;
+  }
+}
+@keyframes carruzelHomePage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-190%);
+  }
+}
+@keyframes carruzelHomePageRigth {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(190%);
+  }
+}
